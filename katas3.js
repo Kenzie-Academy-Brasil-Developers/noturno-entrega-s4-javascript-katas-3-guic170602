@@ -28,7 +28,7 @@ function kata4() {
 
 function kata5() {
     let array = []
-    for (let index = 25; index >= -25; index--) array.push(index)
+    for (let index = 25; index >= -25; index--) if(index % 2 != 0) array.push(index)
     return array    
 }
 
@@ -261,7 +261,7 @@ katas10.addEventListener("click", function() {
 const katas11 = document.getElementById("kata11")
 katas11.addEventListener("click", function() {
     result.innerText = `Kata11 = ${kata11()}`
-    result.style.color= "9bb862"
+    result.style.color= "#9bb862"
     resultadoAmostrar.appendChild(result)
 })
 const katas12 = document.getElementById("kata12")
@@ -273,7 +273,7 @@ katas12.addEventListener("click", function() {
 const katas13 = document.getElementById("kata13")
 katas13.addEventListener("click", function() {
     result.innerText = `Kata13 = ${kata13()}`
-    result.style.color= "            background-color: linen;"
+    result.style.color= "linen"
     resultadoAmostrar.appendChild(result)
 })
 const katas14 = document.getElementById("kata14")
