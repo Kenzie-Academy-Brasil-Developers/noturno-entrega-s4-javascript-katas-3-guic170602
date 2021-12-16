@@ -13,7 +13,9 @@ function kata1() {
 }
 
 function kata2() {
-    return kata1().reverse()
+    let array = []
+    for (let index = 25; index >= 1; index--) array.push(index)
+    return array
 }
 
 function kata3() {
@@ -23,7 +25,9 @@ function kata3() {
 }
 
 function kata4() {
-    return kata3().reverse()
+    let array = []
+    for (let index = -25; index <= -1; index++) array.push(index)
+    return array
 }
 
 function kata5() {
@@ -46,12 +50,12 @@ function kata7() {
 
 function kata8() {
     let array = []
-    for (let index = 1; index <= 100; index++){
+    for (let index = 100; index >= 1; index--){
         if(index % 3 == 0 || index % 7 == 0){
             array.push(index)
         }
     }
-    return array.reverse()
+    return array
 }
 
 function kata9() {
